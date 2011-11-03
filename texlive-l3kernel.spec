@@ -1,3 +1,9 @@
+# revision 24256
+# category Package
+# catalog-ctan /macros/latex/contrib/l3kernel
+# catalog-date 2011-10-10 01:01:54 +0200
+# catalog-license lppl1.3
+# catalog-version SVN 2900
 Name:		texlive-l3kernel
 Version:	0.2900
 Release:	1
@@ -109,6 +115,7 @@ on a snapshot of the SVN repository on 2011-10-09.
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3tl.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3token.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3toks.dtx
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -119,3 +126,5 @@ on a snapshot of the SVN repository on 2011-10-09.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar makeindex tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
