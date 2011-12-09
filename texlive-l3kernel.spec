@@ -5,7 +5,7 @@
 # catalog-license lppl1.3
 # catalog-version SVN 2966
 Name:		texlive-l3kernel
-Version:	SVN2966
+Version:	2966
 Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
