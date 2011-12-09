@@ -1,11 +1,11 @@
-# revision 24256
+# revision 24657
 # category Package
 # catalog-ctan /macros/latex/contrib/l3kernel
-# catalog-date 2011-10-10 01:01:54 +0200
+# catalog-date 2011-11-19 23:20:32 +0100
 # catalog-license lppl1.3
-# catalog-version SVN 2900
+# catalog-version SVN 2966
 Name:		texlive-l3kernel
-Version:	0.2900
+Version:	SVN2966
 Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
@@ -18,9 +18,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
-Conflicts:	texlive-source <= 20110705-3
 
 %description
 The l3kernel bundle provides an implementation of the LaTeX3
@@ -31,22 +28,22 @@ TeX programmers. The packages are set up so that the LaTeX3
 conventions can be used with regular LaTeX 2e packages. All the
 files of the bundle are also available in the Subversion (SVN)
 repository of the LaTeX3 Project. The bundle on CTAN is based
-on a snapshot of the SVN repository on 2011-10-09.
+on a snapshot of the SVN repository on 2011-11-19.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
