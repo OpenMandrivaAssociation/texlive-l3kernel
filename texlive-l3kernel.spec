@@ -6,7 +6,7 @@
 # catalog-version SVN 3036
 Name:		texlive-l3kernel
 Version:	3036
-Release:	1
+Release:	2
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/l3kernel
