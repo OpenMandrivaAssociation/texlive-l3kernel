@@ -1,12 +1,12 @@
-# revision 24822
+# revision 24971
 # category Package
 # catalog-ctan /macros/latex/contrib/l3kernel
-# catalog-date 2011-12-10 15:22:24 +0100
+# catalog-date 2011-12-29 15:17:41 +0100
 # catalog-license lppl1.3
-# catalog-version SVN 3036
+# catalog-version SVN 3109
 Name:		texlive-l3kernel
-Version:	3036
-Release:	2
+Version:	3109
+Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/l3kernel
@@ -28,7 +28,7 @@ TeX programmers. The packages are set up so that the LaTeX3
 conventions can be used with regular LaTeX 2e packages. All the
 files of the bundle are also available in the Subversion (SVN)
 repository of the LaTeX3 Project. The bundle on CTAN is based
-on a snapshot of the SVN repository on 2011-12-07.
+on a snapshot of the SVN repository on 2011-12-29.
 
 %post
     %{_sbindir}/texlive.post
