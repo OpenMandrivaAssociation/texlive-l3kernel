@@ -1,11 +1,11 @@
-# revision 24971
+# revision 25157
 # category Package
 # catalog-ctan /macros/latex/contrib/l3kernel
-# catalog-date 2011-12-29 15:17:41 +0100
+# catalog-date 2012-01-19 12:33:14 +0100
 # catalog-license lppl1.3
-# catalog-version SVN 3109
+# catalog-version SVN 3209
 Name:		texlive-l3kernel
-Version:	3109
+Version:	3209
 Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
@@ -28,7 +28,7 @@ TeX programmers. The packages are set up so that the LaTeX3
 conventions can be used with regular LaTeX 2e packages. All the
 files of the bundle are also available in the Subversion (SVN)
 repository of the LaTeX3 Project. The bundle on CTAN is based
-on a snapshot of the SVN repository on 2011-12-29.
+on a snapshot of the SVN repository on 2012-01-19.
 
 %post
     %{_sbindir}/texlive.post
@@ -40,7 +40,6 @@ on a snapshot of the SVN repository on 2011-12-29.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/makeindex/l3kernel/l3doc.ist
 %{_texmfdistdir}/tex/latex/l3kernel/expl3.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3basics.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3bootstrap.sty
@@ -68,16 +67,12 @@ on a snapshot of the SVN repository on 2011-12-29.
 %doc %{_texmfdistdir}/doc/latex/l3kernel/README
 %doc %{_texmfdistdir}/doc/latex/l3kernel/expl3.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/interface3.pdf
-%doc %{_texmfdistdir}/doc/latex/l3kernel/interface3.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3styleguide.pdf
-%doc %{_texmfdistdir}/doc/latex/l3kernel/l3styleguide.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3syntax-changes.pdf
-%doc %{_texmfdistdir}/doc/latex/l3kernel/l3syntax-changes.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/source3.pdf
-%doc %{_texmfdistdir}/doc/latex/l3kernel/source3.tex
-%doc %{_texmfdistdir}/doc/latex/l3kernel/source3body.tex
 #- source
 %doc %{_texmfdistdir}/source/latex/l3kernel/expl3.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3.ins
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3alloc.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3basics.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3bootstrap.dtx
@@ -90,6 +85,7 @@ on a snapshot of the SVN repository on 2011-12-29.
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3expan.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3file.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3final.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3format.ins
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3fp.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3int.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3io.dtx
@@ -114,4 +110,4 @@ on a snapshot of the SVN repository on 2011-12-29.
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar makeindex tex doc source %{buildroot}%{_texmfdistdir}
+cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
