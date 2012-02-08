@@ -1,11 +1,12 @@
-# revision 25157
+# revision 25329
 # category Package
 # catalog-ctan /macros/latex/contrib/l3kernel
-# catalog-date 2012-01-19 12:33:14 +0100
+# catalog-date 2012-02-07 16:58:22 +0100
 # catalog-license lppl1.3
-# catalog-version SVN 3209
+# catalog-version SVN 3331
 Name:		texlive-l3kernel
-Version:	3209
+Epoch:		1
+Version:	SVN3331
 Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
@@ -100,7 +101,6 @@ on a snapshot of the SVN repository on 2012-01-19.
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3skip.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3tl.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3token.dtx
-%doc %{_texmfdistdir}/source/latex/l3kernel/l3toks.dtx
 
 #-----------------------------------------------------------------------
 %prep
