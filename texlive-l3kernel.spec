@@ -1,12 +1,12 @@
-# revision 25329
+# revision 25357
 # category Package
 # catalog-ctan /macros/latex/contrib/l3kernel
-# catalog-date 2012-02-07 16:58:22 +0100
+# catalog-date 2012-02-08 22:35:49 +0100
 # catalog-license lppl1.3
-# catalog-version SVN 3331
+# catalog-version SVN 3341
 Name:		texlive-l3kernel
 Epoch:		1
-Version:	SVN3331
+Version:	SVN3341
 Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
@@ -41,6 +41,7 @@ on a snapshot of the SVN repository on 2012-01-19.
 
 #-----------------------------------------------------------------------
 %files
+%{_texmfdistdir}/makeindex/l3kernel/l3doc.ist
 %{_texmfdistdir}/tex/latex/l3kernel/expl3.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3basics.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3bootstrap.sty
@@ -68,12 +69,16 @@ on a snapshot of the SVN repository on 2012-01-19.
 %doc %{_texmfdistdir}/doc/latex/l3kernel/README
 %doc %{_texmfdistdir}/doc/latex/l3kernel/expl3.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/interface3.pdf
+%doc %{_texmfdistdir}/doc/latex/l3kernel/interface3.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3styleguide.pdf
+%doc %{_texmfdistdir}/doc/latex/l3kernel/l3styleguide.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3syntax-changes.pdf
+%doc %{_texmfdistdir}/doc/latex/l3kernel/l3syntax-changes.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/source3.pdf
+%doc %{_texmfdistdir}/doc/latex/l3kernel/source3.tex
+%doc %{_texmfdistdir}/doc/latex/l3kernel/source3body.tex
 #- source
 %doc %{_texmfdistdir}/source/latex/l3kernel/expl3.dtx
-%doc %{_texmfdistdir}/source/latex/l3kernel/l3.ins
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3alloc.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3basics.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3bootstrap.dtx
@@ -86,7 +91,6 @@ on a snapshot of the SVN repository on 2012-01-19.
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3expan.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3file.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3final.dtx
-%doc %{_texmfdistdir}/source/latex/l3kernel/l3format.ins
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3fp.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3int.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3io.dtx
@@ -110,4 +114,4 @@ on a snapshot of the SVN repository on 2012-01-19.
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+cp -fpar makeindex tex doc source %{buildroot}%{_texmfdistdir}
