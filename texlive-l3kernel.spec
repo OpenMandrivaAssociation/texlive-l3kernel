@@ -1,12 +1,12 @@
-# revision 25357
+# revision 25525
 # category Package
 # catalog-ctan /macros/latex/contrib/l3kernel
-# catalog-date 2012-02-08 22:35:49 +0100
+# catalog-date 2012-02-26 23:34:26 +0100
 # catalog-license lppl1.3
-# catalog-version SVN 3341
+# catalog-version SVN 3471
 Name:		texlive-l3kernel
 Epoch:		1
-Version:	SVN3341
+Version:	SVN3471
 Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
@@ -29,7 +29,7 @@ TeX programmers. The packages are set up so that the LaTeX3
 conventions can be used with regular LaTeX 2e packages. All the
 files of the bundle are also available in the Subversion (SVN)
 repository of the LaTeX3 Project. The bundle on CTAN is based
-on a snapshot of the SVN repository on 2012-01-19.
+on a snapshot of the SVN repository on 2012-02-26.
 
 %post
     %{_sbindir}/texlive.post
@@ -54,7 +54,6 @@ on a snapshot of the SVN repository on 2012-01-19.
 %{_texmfdistdir}/tex/latex/l3kernel/l3file.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3fp.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3int.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3io.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3keys.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3luatex.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3msg.sty
@@ -93,7 +92,6 @@ on a snapshot of the SVN repository on 2012-01-19.
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3final.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3fp.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3int.dtx
-%doc %{_texmfdistdir}/source/latex/l3kernel/l3io.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3keys.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3luatex.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3msg.dtx
@@ -105,6 +103,7 @@ on a snapshot of the SVN repository on 2012-01-19.
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3skip.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3tl.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3token.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3tree.dtx
 
 #-----------------------------------------------------------------------
 %prep
