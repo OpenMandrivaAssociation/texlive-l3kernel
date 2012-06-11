@@ -1,13 +1,13 @@
-# revision 25525
+# revision 26111
 # category Package
 # catalog-ctan /macros/latex/contrib/l3kernel
-# catalog-date 2012-02-26 23:34:26 +0100
+# catalog-date 2012-04-23 21:12:05 +0200
 # catalog-license lppl1.3
-# catalog-version SVN 3471
+# catalog-version SVN 3570
 Name:		texlive-l3kernel
 Epoch:		1
-Version:	SVN3471
-Release:	2
+Version:	SVN3570
+Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/l3kernel
@@ -103,7 +103,6 @@ on a snapshot of the SVN repository on 2012-02-26.
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3skip.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3tl.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3token.dtx
-%doc %{_texmfdistdir}/source/latex/l3kernel/l3tree.dtx
 
 #-----------------------------------------------------------------------
 %prep
