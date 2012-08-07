@@ -1,12 +1,12 @@
-# revision 26111
+# revision 27108
 # category Package
 # catalog-ctan /macros/latex/contrib/l3kernel
-# catalog-date 2012-04-23 21:12:05 +0200
+# catalog-date 2012-07-16 14:26:04 +0200
 # catalog-license lppl1.3
-# catalog-version SVN 3570
+# catalog-version SVN 3990
 Name:		texlive-l3kernel
 Epoch:		1
-Version:	SVN3570
+Version:	SVN3990
 Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
@@ -29,7 +29,7 @@ TeX programmers. The packages are set up so that the LaTeX3
 conventions can be used with regular LaTeX 2e packages. All the
 files of the bundle are also available in the Subversion (SVN)
 repository of the LaTeX3 Project. The bundle on CTAN is based
-on a snapshot of the SVN repository on 2012-02-26.
+on a snapshot of the SVN repository on 2012-07-16.
 
 %post
     %{_sbindir}/texlive.post
@@ -46,10 +46,12 @@ on a snapshot of the SVN repository on 2012-02-26.
 %{_texmfdistdir}/tex/latex/l3kernel/l3basics.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3bootstrap.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3box.sty
+%{_texmfdistdir}/tex/latex/l3kernel/l3candidates.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3clist.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3coffins.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3color.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3doc.cls
+%{_texmfdistdir}/tex/latex/l3kernel/l3docstrip.tex
 %{_texmfdistdir}/tex/latex/l3kernel/l3expan.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3file.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3fp.sty
@@ -69,6 +71,7 @@ on a snapshot of the SVN repository on 2012-02-26.
 %doc %{_texmfdistdir}/doc/latex/l3kernel/expl3.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/interface3.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/interface3.tex
+%doc %{_texmfdistdir}/doc/latex/l3kernel/l3docstrip.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3styleguide.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3styleguide.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3syntax-changes.pdf
@@ -82,14 +85,28 @@ on a snapshot of the SVN repository on 2012-02-26.
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3basics.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3bootstrap.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3box.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3candidates.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3clist.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3coffins.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3color.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3doc.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3docstrip.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3drivers.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3expan.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3file.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3final.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-assign.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-aux.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-basics.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-convert.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-expo.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-extended.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-logic.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-old.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-parse.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-round.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-traps.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-trig.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3fp.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3int.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3keys.dtx
