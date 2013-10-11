@@ -1,12 +1,12 @@
-# revision 27898
+# revision 31865
 # category Package
 # catalog-ctan /macros/latex/contrib/l3kernel
-# catalog-date 2012-10-03 16:32:18 +0200
+# catalog-date 2013-07-28 14:35:06 +0200
 # catalog-license lppl1.3
-# catalog-version SVN 4249
+# catalog-version SVN 4582
 Name:		texlive-l3kernel
 Epoch:		1
-Version:	SVN4249
+Version:	SVN4582
 Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
@@ -29,7 +29,7 @@ TeX programmers. The packages are set up so that the LaTeX3
 conventions can be used with regular LaTeX 2e packages. All the
 files of the bundle are also available in the Subversion (SVN)
 repository of the LaTeX3 Project. The bundle on CTAN is based
-on a snapshot of the SVN repository on 2012-09-30.
+on a snapshot of the SVN repository on 2012-11-21.
 
 %post
     %{_sbindir}/texlive.post
@@ -52,6 +52,8 @@ on a snapshot of the SVN repository on 2012-09-30.
 %{_texmfdistdir}/tex/latex/l3kernel/l3color.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3doc.cls
 %{_texmfdistdir}/tex/latex/l3kernel/l3docstrip.tex
+%{_texmfdistdir}/tex/latex/l3kernel/l3dvipdfmx.def
+%{_texmfdistdir}/tex/latex/l3kernel/l3dvips.def
 %{_texmfdistdir}/tex/latex/l3kernel/l3expan.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3file.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3fp.sty
@@ -60,6 +62,7 @@ on a snapshot of the SVN repository on 2012-09-30.
 %{_texmfdistdir}/tex/latex/l3kernel/l3luatex.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3msg.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3names.sty
+%{_texmfdistdir}/tex/latex/l3kernel/l3pdfmode.def
 %{_texmfdistdir}/tex/latex/l3kernel/l3prg.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3prop.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3quark.sty
@@ -67,16 +70,15 @@ on a snapshot of the SVN repository on 2012-09-30.
 %{_texmfdistdir}/tex/latex/l3kernel/l3skip.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3tl.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3token.sty
+%{_texmfdistdir}/tex/latex/l3kernel/l3xdvipdfmx.def
 %doc %{_texmfdistdir}/doc/latex/l3kernel/README
 %doc %{_texmfdistdir}/doc/latex/l3kernel/expl3.pdf
-%doc %{_texmfdistdir}/doc/latex/l3kernel/interface3.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/interface3.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3docstrip.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3styleguide.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3styleguide.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3syntax-changes.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3syntax-changes.tex
-%doc %{_texmfdistdir}/doc/latex/l3kernel/source3.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/source3.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/source3body.tex
 #- source
