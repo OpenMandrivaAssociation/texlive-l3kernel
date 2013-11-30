@@ -1,12 +1,12 @@
-# revision 31865
+# revision 32204
 # category Package
 # catalog-ctan /macros/latex/contrib/l3kernel
-# catalog-date 2013-07-28 14:35:06 +0200
+# catalog-date 2013-11-19 19:33:53 +0100
 # catalog-license lppl1.3
-# catalog-version SVN 4582
+# catalog-version SVN 4610
 Name:		texlive-l3kernel
 Epoch:		1
-Version:	SVN4582
+Version:	SVN4610
 Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
@@ -27,9 +27,8 @@ LaTeX 2e. The interface provides the foundation on which the
 LaTeX3 kernel and other future code are built: it is an API for
 TeX programmers. The packages are set up so that the LaTeX3
 conventions can be used with regular LaTeX 2e packages. All the
-files of the bundle are also available in the Subversion (SVN)
-repository of the LaTeX3 Project. The bundle on CTAN is based
-on a snapshot of the SVN repository on 2012-11-21.
+files of the bundle are also available in the project's
+Subversion (SVN) repository.
 
 %post
     %{_sbindir}/texlive.post
@@ -73,12 +72,14 @@ on a snapshot of the SVN repository on 2012-11-21.
 %{_texmfdistdir}/tex/latex/l3kernel/l3xdvipdfmx.def
 %doc %{_texmfdistdir}/doc/latex/l3kernel/README
 %doc %{_texmfdistdir}/doc/latex/l3kernel/expl3.pdf
+%doc %{_texmfdistdir}/doc/latex/l3kernel/interface3.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/interface3.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3docstrip.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3styleguide.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3styleguide.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3syntax-changes.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3syntax-changes.tex
+%doc %{_texmfdistdir}/doc/latex/l3kernel/source3.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/source3.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/source3body.tex
 #- source
