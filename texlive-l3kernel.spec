@@ -7,7 +7,7 @@
 Name:		texlive-l3kernel
 Epoch:		1
 Version:	SVN4610
-Release:	4
+Release:	5
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/l3kernel
