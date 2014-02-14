@@ -1,13 +1,13 @@
-# revision 32204
+# revision 32599
 # category Package
 # catalog-ctan /macros/latex/contrib/l3kernel
-# catalog-date 2013-11-19 19:33:53 +0100
+# catalog-date 2014-01-07 19:05:28 +0100
 # catalog-license lppl1.3
-# catalog-version SVN 4610
+# catalog-version SVN 4646
 Name:		texlive-l3kernel
 Epoch:		1
-Version:	SVN4610
-Release:	5
+Version:	SVN4646
+Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/l3kernel
@@ -79,7 +79,6 @@ Subversion (SVN) repository.
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3styleguide.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3syntax-changes.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3syntax-changes.tex
-%doc %{_texmfdistdir}/doc/latex/l3kernel/source3.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/source3.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/source3body.tex
 #- source
