@@ -1,13 +1,13 @@
-# revision 32599
+# revision 34268
 # category Package
 # catalog-ctan /macros/latex/contrib/l3kernel
-# catalog-date 2014-01-07 19:05:28 +0100
+# catalog-date 2014-06-10 11:12:05 +0200
 # catalog-license lppl1.3
-# catalog-version SVN 4646
+# catalog-version SVN 4714
 Name:		texlive-l3kernel
 Epoch:		1
-Version:	SVN4646
-Release:	2
+Version:	SVN4714
+Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/l3kernel
@@ -40,49 +40,26 @@ Subversion (SVN) repository.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/makeindex/l3kernel/l3doc.ist
+%{_texmfdistdir}/tex/latex/l3kernel/expl3-code.tex
+%{_texmfdistdir}/tex/latex/l3kernel/expl3-generic.tex
 %{_texmfdistdir}/tex/latex/l3kernel/expl3.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3basics.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3bootstrap.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3box.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3candidates.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3clist.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3coffins.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3color.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3doc.cls
 %{_texmfdistdir}/tex/latex/l3kernel/l3docstrip.tex
 %{_texmfdistdir}/tex/latex/l3kernel/l3dvipdfmx.def
 %{_texmfdistdir}/tex/latex/l3kernel/l3dvips.def
-%{_texmfdistdir}/tex/latex/l3kernel/l3expan.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3file.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3fp.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3int.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3keys.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3luatex.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3msg.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3names.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3pdfmode.def
-%{_texmfdistdir}/tex/latex/l3kernel/l3prg.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3prop.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3quark.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3seq.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3skip.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3tl.sty
-%{_texmfdistdir}/tex/latex/l3kernel/l3token.sty
 %{_texmfdistdir}/tex/latex/l3kernel/l3xdvipdfmx.def
 %doc %{_texmfdistdir}/doc/latex/l3kernel/README
 %doc %{_texmfdistdir}/doc/latex/l3kernel/expl3.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/interface3.pdf
-%doc %{_texmfdistdir}/doc/latex/l3kernel/interface3.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3docstrip.pdf
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3styleguide.pdf
-%doc %{_texmfdistdir}/doc/latex/l3kernel/l3styleguide.tex
 %doc %{_texmfdistdir}/doc/latex/l3kernel/l3syntax-changes.pdf
-%doc %{_texmfdistdir}/doc/latex/l3kernel/l3syntax-changes.tex
-%doc %{_texmfdistdir}/doc/latex/l3kernel/source3.tex
-%doc %{_texmfdistdir}/doc/latex/l3kernel/source3body.tex
+%doc %{_texmfdistdir}/doc/latex/l3kernel/source3.pdf
 #- source
 %doc %{_texmfdistdir}/source/latex/l3kernel/expl3.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/interface3.tex
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3.ins
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3alloc.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3basics.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3bootstrap.dtx
@@ -97,6 +74,7 @@ Subversion (SVN) repository.
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3expan.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3file.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3final.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3format.ins
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-assign.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-aux.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-basics.dtx
@@ -104,7 +82,6 @@ Subversion (SVN) repository.
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-expo.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-extended.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-logic.dtx
-%doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-old.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-parse.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-round.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3fp-traps.dtx
@@ -112,7 +89,6 @@ Subversion (SVN) repository.
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3fp.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3int.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3keys.dtx
-%doc %{_texmfdistdir}/source/latex/l3kernel/l3luatex.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3msg.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3names.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3prg.dtx
@@ -120,8 +96,11 @@ Subversion (SVN) repository.
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3quark.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3seq.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3skip.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3styleguide.tex
+%doc %{_texmfdistdir}/source/latex/l3kernel/l3syntax-changes.tex
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3tl.dtx
 %doc %{_texmfdistdir}/source/latex/l3kernel/l3token.dtx
+%doc %{_texmfdistdir}/source/latex/l3kernel/source3.tex
 
 #-----------------------------------------------------------------------
 %prep
@@ -131,4 +110,4 @@ Subversion (SVN) repository.
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar makeindex tex doc source %{buildroot}%{_texmfdistdir}
+cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
