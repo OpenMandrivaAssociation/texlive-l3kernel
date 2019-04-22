@@ -1,7 +1,7 @@
 Name:		texlive-l3kernel
 Epoch:		1
-Version:	20180617
-Release:	2
+Version:	20190217
+Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/l3kernel
