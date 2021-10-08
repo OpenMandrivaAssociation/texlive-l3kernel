@@ -1,3 +1,5 @@
 sources:
   l3kernel.source.tar.xz: 8c898bea3a8ebdf0b155a3c91212282e9dffd504
   l3kernel.tar.xz: 7eeeb1f43ced975d9576c11b20d779e177254d75
+  l3kernel.doc.tar.xz: b2cdef3e1357167ad37b2015149363587fa7975f
+  l3kernel.source.tar.xz: add7db8f580af098edb3001f418b4db8eaf615c3
