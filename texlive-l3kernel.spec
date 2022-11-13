@@ -1,14 +1,14 @@
 Name:		texlive-l3kernel
 Epoch:		1
-Version:	20190406
+Version:	64909
 Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/l3kernel
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l3kernel.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l3kernel.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l3kernel.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l3kernel.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l3kernel.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l3kernel.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +25,12 @@ files of the bundle are also available in the project's
 Subversion (SVN) repository.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -41,7 +41,8 @@ Subversion (SVN) repository.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
