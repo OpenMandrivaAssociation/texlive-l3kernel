@@ -1,6 +1,6 @@
 Name:		texlive-l3kernel
 Epoch:		1
-Version:	70637
+Version:	70992
 Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
