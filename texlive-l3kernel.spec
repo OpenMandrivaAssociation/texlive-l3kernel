@@ -4,7 +4,7 @@ Version:	72365
 Release:	1
 Summary:	LaTeX3 programming conventions
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/l3kernel
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/l3kernel
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l3kernel.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/l3kernel.doc.r%{version}.tar.xz
