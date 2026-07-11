@@ -13,8 +13,6 @@ Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/l3kernel.doc.r%{
 Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/l3kernel.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-BuildRequires:	texlive-tlpkg
-%texlive_base_requires
 Requires:	texlive(l3backend)
 Requires:	texlive(lua-uni-algos)
 Provides:	texlive(%{tl_name}) = %{tl_revision}
